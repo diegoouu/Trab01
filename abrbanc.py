@@ -23,3 +23,4 @@ def create_database(connection, query):
         cursor.execute(query):
         print("Query executada com sucesso")
     except OperationalError as e:
+        prrint(f"O erro '{e}' ocorreu")
